@@ -9,4 +9,5 @@ urlpatterns = [
     path('librarians/', librarian_list, name='librarians'),
     path('logout/', logout_user, name='logout'),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('books/form', book_form, name='books_form'),
 ]
